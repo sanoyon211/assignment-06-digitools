@@ -49,11 +49,11 @@ const Navbar = ({ cartCount }) => {
 
             <button
               className="bg-gradient-to-r from-[#3218f2] to-[#8807ea]
-  hover:from-[#4a2fff] hover:to-[#b20bff]
-  text-white text-sm font-semibold px-5 py-2.5 rounded-xl
-  transition-all duration-300 ease-in-out
-  hover:shadow-sm hover:shadow-purple-400/20
-  hover:scale-[1.01] active:scale-[0.97]"
+              hover:from-[#4a2fff] hover:to-[#b20bff]
+              text-white text-sm font-semibold px-5 py-2.5 rounded-xl
+              transition-all duration-300 ease-in-out
+              hover:shadow-sm hover:shadow-purple-400/20
+              hover:scale-[1.01] active:scale-[0.97]"
             >
               Get Started
             </button>

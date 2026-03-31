@@ -24,7 +24,7 @@ const Banner = () => {
               New: AI-Powered Tools Available
             </div>
 
-            <h1 className="text-5xl sm:text-7xl font-extrabold leading-[1.1] text-gray-900 tracking-tight">
+            <h1 className="text-5xl sm:text-6xl font-extrabold leading-[1.1] text-gray-900 ">
               Supercharge Your <br />
               <span className="text-gradient">Digital Workflow</span>
             </h1>
