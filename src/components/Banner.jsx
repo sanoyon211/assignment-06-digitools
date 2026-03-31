@@ -1,9 +1,9 @@
 import BannerImg from "../assets/products/banner.png"
+import Playbtn from "../assets/products/Play.png"
 
 const Banner = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20 bg-white overflow-hidden">
-      {/* Background Animated Blobs - একদম পিডিএফ ডিজাইনের মতো */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -top-24 -right-24 w-[500px] h-[500px] bg-violet-100 rounded-full blur-[120px] opacity-70 animate-pulse-slow"></div>
         <div
@@ -37,11 +37,13 @@ const Banner = () => {
 
             <div className="flex flex-wrap gap-5">
               <a href="#products">
-                <button className="btn-gradient cursor-pointer">Explore Products</button>
+                <button className="btn-gradient cursor-pointer">
+                  Explore Products
+                </button>
               </a>
 
-              <button className="bg-white border border-gray-200 hover:border-violet-300 text-gray-700 font-bold px-8 py-4 rounded-3xl transition-all hover:bg-violet-50 flex items-center gap-2 shadow-sm cursor-pointer">
-                Watch Demo
+              <button className="bg-white border-2 border-violet-500 hover:border-violet-300 bg-gradient-to-r from-[#3218f2] to-[#8807ea] bg-clip-text text-transparent font-bold px-5 py-4 rounded-3xl transition-all hover:bg-violet-50 flex items-center gap-2 shadow-sm cursor-pointer hover:shadow-sm hover:shadow-violet-600">
+              <img src={Playbtn} alt="" /> Watch Demo
               </button>
             </div>
           </div>
