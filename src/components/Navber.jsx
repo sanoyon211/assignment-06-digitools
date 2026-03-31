@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { CiShoppingCart } from 'react-icons/ci';
 
 const Navbar = ({ cartCount }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -7,15 +8,9 @@ const Navbar = ({ cartCount }) => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <div className="flex items-center gap-1">
-            {/* Logo Image — uncomment করো যখন logo image যোগ করবে */}
-            {/*
-              <img src="/images/logo.png" alt="DigiTools Logo" className="h-8 w-auto" />
-            */}
-            <span className="text-2xl font-extrabold font-[family-name:var(--font-display)]">
-              <span className="text-violet-600">Digi</span>
-              <span className="text-gray-900">Tools</span>
+            <span className="text-2xl font-extrabold bg-gradient-to-r from-[#3218f2] to-[#8807ea] bg-clip-text text-transparent">
+              Digitools
             </span>
           </div>
 
@@ -39,19 +34,7 @@ const Navbar = ({ cartCount }) => {
             {/* Cart */}
             <div className="relative">
               <button className="p-2 rounded-xl text-gray-500 hover:text-violet-600 hover:bg-violet-50 transition-all">
-                <svg
-                  className="size-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 6M7 13l-1.5 6m0 0h9M17 19a1 1 0 100 2 1 1 0 000-2zm-10 0a1 1 0 100 2 1 1 0 000-2z"
-                  />
-                </svg>
+                <CiShoppingCart className="text-3xl text-black" />
                 {cartCount > 0 && (
                   <span className="absolute -top-1 -right-1 bg-violet-600 text-white text-[11px] font-bold rounded-full size-5 flex items-center justify-center">
                     {cartCount}
@@ -64,7 +47,14 @@ const Navbar = ({ cartCount }) => {
               Login
             </button>
 
-            <button className="bg-violet-600 hover:bg-violet-700 text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition-all hover:shadow-lg hover:shadow-violet-200">
+            <button
+              className="bg-gradient-to-r from-[#3218f2] to-[#8807ea]
+  hover:from-[#4a2fff] hover:to-[#b20bff]
+  text-white text-sm font-semibold px-5 py-2.5 rounded-xl
+  transition-all duration-300 ease-in-out
+  hover:shadow-sm hover:shadow-purple-400/20
+  hover:scale-[1.01] active:scale-[0.97]"
+            >
               Get Started
             </button>
 

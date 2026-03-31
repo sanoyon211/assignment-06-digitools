@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-body: "Outfit", "Inter", system-ui, sans-serif;
+
+
+  --color-violet-primary: #3218f2;
+  --color-violet-secondary: #8807ea;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(1deg); }
+  }
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 0.8; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(1.1); }
+  }
+  
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse-slow 8s ease-in-out infinite;
+}
+
+.btn-gradient {
+  @apply bg-gradient-to-r from-[#3218f2] to-[#8807ea]
+    hover:from-[#4a2fff] hover:to-[#b20bff]
+    text-white text-sm font-semibold px-5 py-5 rounded-3xl
+    transition-all duration-300 ease-in-out
+    hover:shadow-sm hover:shadow-purple-400/20
+    hover:scale-[1.01] active:scale-[0.97]
+    ;
+}
