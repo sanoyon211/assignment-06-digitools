@@ -1,3 +1,4 @@
+import Navbar from "./components/Navber"
 
 
 
@@ -7,7 +8,7 @@ function App() {
 
   return (
     <>
-      
+      <Navbar/>
     </>
   )
 }
