@@ -1,5 +1,6 @@
 import Banner from "./components/Banner"
-import Navbar from "./components/Navber"
+import Footer from "./components/Footer"
+import Navbar from "./components/Navbar"
 import Pricing from "./components/Pricing"
 import Ready from "./components/Ready"
 import Stats from "./components/Stats"
@@ -18,7 +19,8 @@ function App() {
       <Stats />
       <Steps />
       <Pricing />
-      <Ready/>
+      <Ready />
+      <Footer/>
     </>
   )
 }

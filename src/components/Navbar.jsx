@@ -9,7 +9,7 @@ const Navbar = ({ cartCount }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-1">
-            <span className="text-2xl font-extrabold bg-gradient-to-r from-[#3218f2] to-[#8807ea] bg-clip-text text-transparent">
+            <span className="text-3xl font-extrabold bg-gradient-to-r from-[#3218f2] to-[#8807ea] bg-clip-text text-transparent">
               Digitools
             </span>
           </div>
@@ -21,7 +21,7 @@ const Navbar = ({ cartCount }) => {
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  className="text-sm font-medium text-gray-500 hover:text-violet-600 transition-colors"
+                  className="text-lg font-medium text-gray-700 hover:text-violet-600 transition-colors"
                 >
                   {item}
                 </a>
@@ -43,7 +43,7 @@ const Navbar = ({ cartCount }) => {
               </button>
             </div>
 
-            <button className="hidden md:block text-sm font-medium text-gray-500 hover:text-violet-600 px-3 py-2 rounded-lg transition-colors">
+            <button className="hidden md:block text-lg font-medium text-gray-800 hover:text-violet-600 px-3 py-2 rounded-lg transition-colors">
               Login
             </button>
 
