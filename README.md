@@ -4,13 +4,29 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🧰 Technologies Used
 
-## React Compiler
+| Technology | Purpose |
+|---|
+| **React.js** | Frontend UI framework |
+| **Tailwind CSS v4** | Utility-first styling |
+| **React-Toastify** | Toast notification system |
+| **Vite** | Fast build tool & dev server |
+| **JavaScript ES6+** | Modern JS features |
+| **JSON** | Product data storage |
+| **React icons** | for using icon |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🛒 Smart Cart System
+Add products to cart, remove them individually, and proceed to checkout — all with real-time toast notifications using React-Toastify.
+
+### 🔄 Dynamic Product/Cart Toggle
+Seamlessly switch between the product listing and cart view with a single click. Cart count updates live in the navbar.
+
+### 📱 Fully Responsive Design
+Works beautifully on mobile, tablet, and desktop. Built with a mobile-first approach using Tailwind CSS v4 breakpoints.
+
+---
