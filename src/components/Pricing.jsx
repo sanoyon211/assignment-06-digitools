@@ -129,7 +129,7 @@ const Pricing = () => {
 
               {/* Gradient Button */}
               <button
-                className={`w-full py-4 rounded-2xl font-black text-sm transition-all duration-300 border-0 cursor-pointer shadow-lg
+                className={`w-full py-4 rounded-3xl font-black text-sm transition-all duration-300 border-0 cursor-pointer shadow-lg
                   ${
                     plan.popular
                       ? 'bg-white text-violet-700 hover:bg-violet-50 hover:shadow-xl hover:scale-[1.02]'

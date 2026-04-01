@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { CiShoppingCart } from 'react-icons/ci';
+import CartSection from './CartSection';
 
 const Navbar = ({ cartCount }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,14 +34,16 @@ const Navbar = ({ cartCount }) => {
           <div className="flex items-center gap-2">
             {/* Cart */}
             <div className="relative">
-              <button className="p-2 rounded-xl text-gray-500 hover:text-violet-600 hover:bg-violet-50 transition-all">
-                <CiShoppingCart className="text-3xl text-black" />
-                {cartCount > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-violet-600 text-white text-[11px] font-bold rounded-full size-5 flex items-center justify-center">
-                    {cartCount}
-                  </span>
-                )}
-              </button>
+              <a href="#products">
+                <button className="p-2 rounded-xl text-gray-500 hover:text-violet-600 hover:bg-violet-100 transition-all">
+                  <CiShoppingCart className="text-3xl text-black" />
+                  {cartCount > 0 && (
+                    <span className="absolute -top-1 -right-1 bg-gradient-to-r from-[#3218f2] to-[#8807ea] text-white text-[11px] font-bold rounded-full size-5 flex items-center justify-center">
+                      {cartCount}
+                    </span>
+                  )}
+                </button>
+              </a>
             </div>
 
             <button className="hidden md:block text-lg font-medium text-gray-800 hover:text-violet-600 px-3 py-2 rounded-lg transition-colors">
@@ -50,7 +53,7 @@ const Navbar = ({ cartCount }) => {
             <button
               className="bg-gradient-to-r from-[#3218f2] to-[#8807ea]
               hover:from-[#4a2fff] hover:to-[#b20bff]
-              text-white text-sm font-semibold px-5 py-2.5 rounded-xl
+              text-white text-sm font-semibold px-5 py-2.5 rounded-3xl
               transition-all duration-300 ease-in-out
               hover:shadow-sm hover:shadow-purple-400/20
               hover:scale-[1.01] active:scale-[0.97]"
