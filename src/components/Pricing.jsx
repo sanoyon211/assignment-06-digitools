@@ -67,7 +67,7 @@ const Pricing = () => {
         </div>
 
         {/* Pricing Grid */}
-        <div className="grid md:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {plans.map((plan, i) => (
             <div
               key={i}
@@ -80,7 +80,7 @@ const Pricing = () => {
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="bg-amber-300 text-amber-700 text-xs sm:text-[14px] font-bold uppercase tracking-widest px-6 py-2 rounded-full shadow-lg">
+                  <span className="bg-amber-300 text-amber-700 text-xs lg:text-[14px] font-bold uppercase tracking-widest px-6 py-2 rounded-full shadow-lg">
                     Most Popular
                   </span>
                 </div>

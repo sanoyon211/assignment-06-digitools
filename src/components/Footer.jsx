@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     <div className="bg-gray-900 py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-20 mb-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-20 mb-10">
           <div className="col-span-1">
             <div className="mb-4">
               <span className="text-2xl text-white font-extrabold font-[family-name:var(--font-display)]">

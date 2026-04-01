@@ -32,7 +32,7 @@ const Steps = () => {
         <p className="text-gray-400 text-lg leading-relaxed max-w-xl mx-auto mb-10 sm:mb-16 text-center">
           Start using premium digital tools in minutes, not hours.
         </p>
-        <div className="flex flex-col gap-4 md:flex-row md:gap-10 relative mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 relative mx-auto">
           {steps.map((s, i) => (
             <div
               key={i}
