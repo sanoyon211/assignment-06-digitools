@@ -59,10 +59,10 @@ const ProductCard = ({ product, onAddToCart, cartItems }) => {
 
       
       <div>
-        <h3 className="text-[15px] font-bold text-gray-900 mb-1.5 font-[family-name:var(--font-display)]">
+        <h3 className="text-lg font-bold text-gray-900 mb-1.5 font-[family-name:var(--font-display)]">
           {product.name}
         </h3>
-        <p className="text-gray-500 text-sm leading-relaxed">
+        <p className="text-gray-500 text-sm md:text-base leading-relaxed">
           {product.description}
         </p>
       </div>
@@ -72,7 +72,7 @@ const ProductCard = ({ product, onAddToCart, cartItems }) => {
         <span className="text-2xl font-extrabold text-gray-900 font-[family-name:var(--font-display)]">
           ${product.price}
         </span>
-        <span className="text-gray-400 text-sm">
+        <span className="text-gray-400 text-sm md:text-base">
           {periodLabel[product.period]}
         </span>
       </div>
@@ -80,7 +80,7 @@ const ProductCard = ({ product, onAddToCart, cartItems }) => {
       
       <ul className="flex flex-col gap-2 grow">
         {product.features.map((feature, i) => (
-          <li key={i} className="flex items-center gap-2 text-sm text-gray-600">
+          <li key={i} className="flex items-center gap-2 text-sm md:text-base text-gray-600">
             <HiCheck className="w-5 h-5 mt-0.5 shrink-0 text-[#4f39f6]" />
             {feature}
           </li>
@@ -90,13 +90,13 @@ const ProductCard = ({ product, onAddToCart, cartItems }) => {
       
       <button
         onClick={handleBuyNow}
-        className={`w-full py-3 rounded-3xl font-semibold text-sm transition-all duration-200 cursor-pointer border-0
+        className={`w-full py-3 rounded-3xl font-semibold text-sm md:text-base transition-all duration-200 cursor-pointer border-0
           ${
             isInCart
               ? 'bg-emerald-50 text-emerald-600'
               : added
                 ? 'bg-emerald-600 text-white'
-                : 'bg-gradient-to-r from-[#3218f2] to-[#8807ea] hover:from-[#4a2fff] hover:to-[#b20bff] text-white text-sm font-semibold  transition-all duration-300 ease-in-out hover:scale-[1.01] active:scale-[0.97]'
+                : 'bg-gradient-to-r from-[#3218f2] to-[#8807ea] hover:from-[#4a2fff] hover:to-[#b20bff] text-white text-sm md:text-base font-semibold  transition-all duration-300 ease-in-out hover:scale-[1.01] active:scale-[0.97]'
           }`}
       >
         {isInCart ? '✓ Added to Cart' : added ? '✓ Added!' : 'Buy Now'}

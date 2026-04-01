@@ -55,7 +55,7 @@ const Pricing = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-6 tracking-tighter font-[family-name:var(--font-display)]">
+          <h2 className="text-3xl sm:text-5xl font-black text-gray-900 mb-6 tracking-tighter font-[family-name:var(--font-display)]">
             Simple,{' '}
             <span className="bg-gradient-to-r from-[#4f39f6] to-[#9514FA] bg-clip-text text-transparent">
               Transparent Pricing
@@ -80,7 +80,7 @@ const Pricing = () => {
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="bg-amber-300 text-amber-700 text-[14px] font-bold uppercase tracking-widest px-6 py-2 rounded-full shadow-lg">
+                  <span className="bg-amber-300 text-amber-700 text-xs sm:text-[14px] font-bold uppercase tracking-widest px-6 py-2 rounded-full shadow-lg">
                     Most Popular
                   </span>
                 </div>

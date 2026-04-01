@@ -26,7 +26,7 @@ const Steps = () => {
   return (
     <section className="py-24 bg-gray-100">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-center text-5xl font-black mb-20 tracking-tighter">
+        <h2 className="text-center text-3xl sm:text-5xl font-black mb-20 tracking-tighter">
           Get Started in <span className="text-gradient">3 Steps</span>
         </h2>
         <div className="flex flex-col gap-4 md:flex-row md:gap-10 relative mx-auto">

@@ -4,13 +4,7 @@ import Playbtn from "../assets/products/Play.png"
 const Banner = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20 bg-white overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-24 -right-24 w-[500px] h-[500px] bg-violet-100 rounded-full blur-[120px] opacity-70 animate-pulse-slow"></div>
-        <div
-          className="absolute top-1/2 -left-24 w-[400px] h-[400px] bg-pink-100 rounded-full blur-[100px] opacity-50 animate-pulse-slow"
-          style={{ animationDelay: '2s' }}
-        ></div>
-      </div>
+      
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16 w-full">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -25,7 +19,7 @@ const Banner = () => {
             </div>
 
             <h1 className="text-5xl sm:text-6xl font-extrabold leading-[1.1] text-gray-900 ">
-              Supercharge Your <br />
+              Supercharge Your <br className="hidden sm:block" />
               <span className="text-gradient">Digital Workflow</span>
             </h1>
 

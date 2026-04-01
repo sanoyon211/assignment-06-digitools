@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { CiShoppingCart } from 'react-icons/ci';
-import CartSection from './CartSection';
+import { MdMenu } from 'react-icons/md';
 
 const Navbar = ({ cartCount }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -51,7 +51,7 @@ const Navbar = ({ cartCount }) => {
             </button>
 
             <button
-              className="bg-gradient-to-r from-[#3218f2] to-[#8807ea]
+              className="hidden sm:block bg-gradient-to-r from-[#3218f2] to-[#8807ea]
               hover:from-[#4a2fff] hover:to-[#b20bff]
               text-white text-sm font-semibold px-5 py-2.5 rounded-3xl
               transition-all duration-300 ease-in-out
@@ -65,28 +65,7 @@ const Navbar = ({ cartCount }) => {
               className="md:hidden text-gray-600"
               onClick={() => setMenuOpen(!menuOpen)}
             >
-              <svg
-                className="size-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                {menuOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                )}
-              </svg>
+              <MdMenu className="text-2xl" />
             </button>
           </div>
         </div>
@@ -108,6 +87,16 @@ const Navbar = ({ cartCount }) => {
             )}
             <button className="block py-2.5 text-sm font-medium text-gray-500">
               Login
+            </button>
+            <button
+              className=" bg-gradient-to-r from-[#3218f2] to-[#8807ea]
+              hover:from-[#4a2fff] hover:to-[#b20bff]
+              text-white text-xs font-semibold px-5 py-2.5 rounded-3xl
+              transition-all duration-300 ease-in-out
+              hover:shadow-sm hover:shadow-purple-400/20
+              hover:scale-[1.01] active:scale-[0.97]"
+            >
+              Get Started
             </button>
           </div>
         )}
