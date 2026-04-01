@@ -12,13 +12,13 @@ const Ready = () => {
         <div className="flex flex-wrap justify-center gap-4 mb-5">
           <a
             href="#products"
-            className="bg-white text-violet-700 hover:bg-violet-50 font-semibold px-6 py-4 rounded-3xl transition-all text-lg no-underline hover:shadow-lg ease-in-out duration-300 hover:scale-[1.01] active:scale-[0.97]"
+            className="bg-white text-violet-700 hover:bg-violet-50 font-semibold px-6 py-4 rounded-3xl transition-all text-sm sm:text-lg no-underline hover:shadow-lg ease-in-out duration-300 hover:scale-[1.01] active:scale-[0.97]"
           >
             Explore Products
           </a>
           <a
             href="#pricing"
-            className="border border-violet-400 text-white  font-semibold px-6 py-4 rounded-3xl transition-all text-lg no-underline ease-in-out duration-300 hover:scale-[1.01] active:scale-[0.97]"
+            className="border border-violet-400 text-white  font-semibold px-6 py-4 rounded-3xl transition-all text-sm sm:text-lg no-underline ease-in-out duration-300 hover:scale-[1.01] active:scale-[0.97]"
           >
             View Pricing
           </a>

@@ -26,14 +26,17 @@ const Steps = () => {
   return (
     <section className="py-24 bg-gray-100">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-center text-3xl sm:text-5xl font-black mb-20 tracking-tighter">
-          Get Started in <span className="text-gradient">3 Steps</span>
+        <h2 className="text-center text-3xl sm:text-5xl font-black mb-4 tracking-tighter">
+          Get Started in <span className="text-gradient ">3 Steps</span>
         </h2>
+        <p className="text-gray-400 text-lg leading-relaxed max-w-xl mx-auto mb-10 sm:mb-16 text-center">
+          Start using premium digital tools in minutes, not hours.
+        </p>
         <div className="flex flex-col gap-4 md:flex-row md:gap-10 relative mx-auto">
           {steps.map((s, i) => (
             <div
               key={i}
-              className="flex flex-col items-center text-center relative bg-white border border-gray-200 rounded-xl py-15 px-10 group "
+              className="flex flex-col items-center text-center relative bg-white border border-gray-200 rounded-xl   py-10 px-6 sm:py-15 sm:px-10 group "
             >
               <div className="absolute top-4 right-4 size-8 rounded-full bg-gradient-to-r from-[#3218f2] to-[#8807ea] text-white text-xs font-black flex items-center justify-center shadow-lg">
                 {s.n}

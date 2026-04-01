@@ -46,20 +46,20 @@ const ProductCard = ({ product, onAddToCart, cartItems }) => {
       
       <div className="absolute top-4 right-4">
         <span
-          className={`${tagClass[product.tagType] || 'tag-popular'} text-[11px] font-bold px-3 py-1 rounded-full`}
+          className={`${tagClass[product.tagType] || 'tag-popular'} text-base font-semibold px-3 py-1 rounded-full`}
         >
           {product.tag}
         </span>
       </div>
 
       
-      <div className="size-14 rounded-2xl bg-violet-50 flex items-center justify-center text-3xl shrink-0">
+      <div className="size-14 rounded-2xl bg-violet-50 flex items-center justify-center text-4xl shrink-0">
         {product.icon}
       </div>
 
       
       <div>
-        <h3 className="text-lg font-bold text-gray-900 mb-1.5 font-[family-name:var(--font-display)]">
+        <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1.5 font-[family-name:var(--font-display)]">
           {product.name}
         </h3>
         <p className="text-gray-500 text-sm md:text-base leading-relaxed">

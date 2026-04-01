@@ -54,7 +54,7 @@ const Pricing = () => {
     <section id="pricing" className="py-24 bg-gray-50/50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-16">
           <h2 className="text-3xl sm:text-5xl font-black text-gray-900 mb-6 tracking-tighter font-[family-name:var(--font-display)]">
             Simple,{' '}
             <span className="bg-gradient-to-r from-[#4f39f6] to-[#9514FA] bg-clip-text text-transparent">
@@ -71,7 +71,7 @@ const Pricing = () => {
           {plans.map((plan, i) => (
             <div
               key={i}
-              className={`relative rounded-2xl p-10 transition-all duration-500 hover:-translate-y-2 h-full flex flex-col
+              className={`relative rounded-2xl p-6 sm:p-10 transition-all duration-500 hover:-translate-y-2 h-full flex flex-col
                 ${
                   plan.popular
                     ? 'bg-gradient-to-r from-[#4f39f6] to-[#9514FA] shadow-2xl shadow-violet-200 scale-101 z-10 text-white'
@@ -86,9 +86,9 @@ const Pricing = () => {
                 </div>
               )}
 
-              <div className="mb-8">
+              <div className="mb-4 sm:mb-8">
                 <h3
-                  className={`text-2xl font-black mb-2 font-[family-name:var(--font-display)] tracking-tight ${plan.popular ? 'text-white' : 'text-gray-900'}`}
+                  className={`text-xl sm:text-2xl font-black mb-2 font-[family-name:var(--font-display)] tracking-tight ${plan.popular ? 'text-white' : 'text-gray-900'}`}
                 >
                   {plan.name}
                 </h3>
@@ -99,9 +99,9 @@ const Pricing = () => {
                 </p>
               </div>
 
-              <div className="flex items-baseline gap-1 mb-8">
+              <div className="flex items-baseline gap-1 mb-4 sm:mb-8">
                 <span
-                  className={`text-5xl font-black tracking-tighter font-[family-name:var(--font-display)] ${plan.popular ? 'text-white' : 'text-gray-900'}`}
+                  className={`text-3xl sm:4xl font-black tracking-tighter font-[family-name:var(--font-display)] ${plan.popular ? 'text-white' : 'text-gray-900'}`}
                 >
                   ${plan.price}
                 </span>
@@ -113,11 +113,11 @@ const Pricing = () => {
               </div>
 
               {/* Features List */}
-              <ul className="flex flex-col gap-2 mb-10 flex-grow">
+              <ul className="flex flex-col gap-2 mb-6 sm:mb-10 flex-grow">
                 {plan.features.map((feature, j) => (
                   <li
                     key={j}
-                    className={`flex items-start gap-3 text-sm font-semibold ${plan.popular ? 'text-white' : 'text-gray-600'}`}
+                    className={`flex items-start gap-3 text-[12px] sm:text-sm font-semibold ${plan.popular ? 'text-white' : 'text-gray-600'}`}
                   >
                     <HiCheck
                       className={`w-5 h-5 mt-0.5 shrink-0 ${plan.popular ? 'text-white' : 'text-[#4f39f6]'}`}
@@ -129,7 +129,7 @@ const Pricing = () => {
 
               {/* Gradient Button */}
               <button
-                className={`w-full py-4 rounded-3xl font-black text-sm transition-all duration-300 border-0 cursor-pointer shadow-lg
+                className={`w-full py-4 rounded-3xl font-black text-[12px] sm:text-sm transition-all duration-300 border-0 cursor-pointer shadow-lg
                   ${
                     plan.popular
                       ? 'bg-white text-violet-700 hover:bg-violet-50 hover:shadow-xl hover:scale-[1.02]'
